@@ -9,8 +9,7 @@ import java.io.IOException;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
-
-
+import android.widget.TextView;
 public class GetTask extends AsyncTask<Void, Void, Void> 
 {
     String returnMessage = "";
@@ -49,9 +48,12 @@ public class GetTask extends AsyncTask<Void, Void, Void>
         
         return null;
     }
-   
-    protected String GetMessage()
+    
+    @Override
+    protected void onPostExecute(Void result) 
     {
-        return returnMessage;
+        super.onPostExecute(result);
+      
+      HelloAndroidActivity.data.setText(returnMessage);
     }
 }

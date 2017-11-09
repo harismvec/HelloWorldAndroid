@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 public class HelloAndroidActivity extends Activity {
 
+    public static TextView data;
     /**
      * Called when the activity is first created.
      *
@@ -19,11 +20,8 @@ public class HelloAndroidActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        data = (TextView) findViewById(R.id.text_view_id);
         
-        GetTask tsk = new GetTask();
-        String msg = tsk.GetMessage();
-        TextView txt = (TextView) findViewById(R.id.text_view_id);
-        txt.setText("Bharani");
     }
 
     @Override

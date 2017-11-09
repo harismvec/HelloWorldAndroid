@@ -30,8 +30,9 @@ public class HelloAndroidActivity extends Activity {
         {
             @Override
             public void onClick(View view){
-                GetTask process = new GetTask();
-        process.execute();
+                //GetTask process = new GetTask();
+                //process.execute();
+                data.setText("test data");
             }
         });
         

@@ -17,7 +17,7 @@
         android:id="@+id/text_view_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/button_id"
-        android:text="@string/hello_world" />
+        android:layout_below="@id/button_id"
+        android:hint="@string/hello_world" />
 
 </RelativeLayout>

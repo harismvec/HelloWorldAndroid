@@ -18,7 +18,7 @@ public class GetTask extends AsyncTask<Void, Void, Void>
     {
         try
         {
-            HelloAndroidActivity.data.setText("processing...");
+            //HelloAndroidActivity.data.setText("processing...");
         	String urlStr = "http://test-2956.apphb.com/api/Values/login";
           
           	URL url = new URL(urlStr);

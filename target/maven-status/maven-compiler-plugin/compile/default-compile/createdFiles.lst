@@ -7,5 +7,6 @@ com/codenvy/template/android/R$layout.class
 com/codenvy/template/android/BuildConfig.class
 com/codenvy/template/android/R$style.class
 com/codenvy/template/android/R.class
+com/codenvy/template/android/GetTask.class
 com/codenvy/template/android/R$id.class
 com/codenvy/template/android/R$string.class

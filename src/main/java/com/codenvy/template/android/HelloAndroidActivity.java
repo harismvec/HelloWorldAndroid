@@ -3,6 +3,7 @@ package com.codenvy.template.android;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.TextView;
 
 public class HelloAndroidActivity extends Activity {
 
@@ -18,6 +19,11 @@ public class HelloAndroidActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        GetTask tsk = new GetTask();
+        String msg = tsk.GetMessage();
+        TextView txt = (TextView) findViewById(R.id.text_view_id);
+        txt.setText("Bharani");
     }
 
     @Override

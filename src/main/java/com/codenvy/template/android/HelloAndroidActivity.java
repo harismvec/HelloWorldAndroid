@@ -22,6 +22,8 @@ public class HelloAndroidActivity extends Activity {
         setContentView(R.layout.activity_main);
         data = (TextView) findViewById(R.id.text_view_id);
         
+       GetTask process = new GetTask();
+        process.execute();
     }
 
     @Override

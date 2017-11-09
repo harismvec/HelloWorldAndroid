@@ -4,10 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.TextView;
+import android.widget.Button;
+import android.view.View;
 
 public class HelloAndroidActivity extends Activity {
 
     public static TextView data;
+    Button click;
     /**
      * Called when the activity is first created.
      *
@@ -20,10 +23,19 @@ public class HelloAndroidActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        click = (Button) findViewById(R.id.button_id);
         data = (TextView) findViewById(R.id.text_view_id);
         
-       GetTask process = new GetTask();
+        click.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view){
+                GetTask process = new GetTask();
         process.execute();
+            }
+        });
+        
+       
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.codenvy.template.android;
+package com.eclatech.projectred.account;
 
 import android.os.AsyncTask;
 import java.net.HttpURLConnection;

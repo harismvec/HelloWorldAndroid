@@ -1,4 +1,4 @@
-package com.codenvy.template.android;
+package com.eclatech.projectred.account;
 
 import android.app.Activity;
 import android.os.Bundle;

@@ -1,5 +1,5 @@
-/projects/mobile-android-hello-world/src/main/java/com/codenvy/template/android/RegisterActivity.java
-/projects/mobile-android-hello-world/target/generated-sources/r/com/eclatech/projectred/account/BuildConfig.java
-/projects/mobile-android-hello-world/target/generated-sources/r/com/eclatech/projectred/account/R.java
-/projects/mobile-android-hello-world/src/main/java/com/codenvy/template/android/GetTask.java
-/projects/mobile-android-hello-world/src/main/java/com/codenvy/template/android/HelloAndroidActivity.java
+/projects/projectred/src/main/java/com/eclatech/projectred/account/RegisterActivity.java
+/projects/projectred/src/main/java/com/eclatech/projectred/account/GetTask.java
+/projects/projectred/target/generated-sources/r/com/eclatech/projectred/account/BuildConfig.java
+/projects/projectred/target/generated-sources/r/com/eclatech/projectred/account/R.java
+/projects/projectred/src/main/java/com/eclatech/projectred/account/HelloAndroidActivity.java

@@ -1,16 +1,11 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fitsSystemWindows="true">
-<LinearLayout
-android:orientation="vertical"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
->
-    <TextInputLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    
     <EditText
         android:id="@+id/txtUserName"
         android:layout_width="wrap_content"
@@ -18,10 +13,7 @@ android:layout_height="wrap_content"
         android:hint="Enter Email"
         android:layout_centerHorizontal="true"
     />
-    </TextInputLayout>
-    <TextInputLayout
-    android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    
     <EditText 
         android:id="@+id/txtPassword"
         android:inputType="textPassword"
@@ -30,7 +22,7 @@ android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/txtUserName"
     />
-    </TextInputLayout>
+
     <Button 
         android:id="@+id/button_id"
         android:layout_width="wrap_content"
@@ -47,5 +39,4 @@ android:layout_height="wrap_content"
         android:layout_below="@id/button_id"
         android:hint="@string/hello_world" />
 
-</LinearLayout>
-</ScrollView>
+</RelativeLayout>

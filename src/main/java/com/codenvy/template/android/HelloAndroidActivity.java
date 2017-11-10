@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.widget.TextView;
 import android.widget.Button;
 import android.view.View;
+import android.content.Intent;
 
 public class HelloAndroidActivity extends Activity {
 
@@ -35,7 +36,18 @@ public class HelloAndroidActivity extends Activity {
             }
         });
         
+       /*to link register to new activity*/
        
+       TextView registerLink = (TextView) findViewById(R.id.register_link);
+       
+        registerLink.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+           public void onClick(View v){
+             Intent intent = new Intent(HelloAndroidActivity.this, RegisterActivity.class);
+             startActivity(intent);
+       } 
+        });
     }
 
     @Override

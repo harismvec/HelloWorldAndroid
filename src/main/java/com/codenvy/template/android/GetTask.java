@@ -29,7 +29,7 @@ public class GetTask extends AsyncTask<Void, Void, Void>
     @Override
     protected void onPreExecute() {
          super.onPreExecute();
-        _p.setMessage("Saving image to SD Card");
+        _p.setMessage("Authenticating...");
         _p.setIndeterminate(false);
         _p.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         _p.setCancelable(false);
